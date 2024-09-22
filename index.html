@@ -51,7 +51,7 @@
     <div  class="font-bold text-4xl text-gray-100 lg:hidden cursor-pointer" ><i id="menu-icon" class="ri-menu-fold-line"></i></div>
     
     <div id="sm-navbar" 
-    class= "flex flex-col justify-center items-center gap-5 px-20 bg-black text-gray-100 w-full h-[70vh] absolute z-50 top-20 backdrop-blur-md lg:hidden sm:hidden rounded-b-2xl">
+    class= "flex flex-col justify-center items-center gap-5 px-20 bg-gray-800 text-gray-100 w-full h-[70vh] absolute z-50 top-28 backdrop-blur-md bg-opacity-30 lg:hidden sm:hidden rounded-b-2xl">
       <ul class=" w-full flex flex-col justify-center items-center h-auto gap-6 text-4xl cursor-pointer ">
           <li class="Link">Home</li>
     
@@ -72,9 +72,43 @@
     </div>
     </header>
     
-    <!-- ------------------------------------------------------------ -->
 
-    <!-- ------------------------------------------------------------ -->
+    <!-- ---------------------------Section home--------------------------------- -->
+<section class="home h-[70vh] relative container">
+    <div class="absolute inset-0">
+        <img class="w-full h-full object-cover opacity-90 rounded-3xl" src="https://img.freepik.com/free-photo/beautiful-natural-clouds-sky_23-2148825005.jpg?t=st=1727033440~exp=1727037040~hmac=2fef75e180d776ad3c1eb807309581c9300ac417daae3c6616f3336aba8b662a&w=900" alt="Image example" />
+    </div>
+    <div class="h-full w-full flex justify-between items-center overflow-hidden relative z-20">
+        <!-- Left div -->
+        <div class="flex flex-col gap-8 h-[80%] w-[60%] p-6 rounded-lg shadow-lg">
+            <div>
+                <h1 class="text-gray-100 font-bold text-8xl text-center">San Francisco</h1>
+                <div class="text-gray-100 font-semibold my-2 flex justify-evenly text-2xl">
+                    <p>Monday, May 23</p>
+                    <p>Updated As Of 2:45 PM</p>
+                </div>
+            </div>
+            <!-- For state -->
+            <div class="mt-4 bg-gray-100 py-10 px-14 grid gap-9 grid-cols-2 grid-rows-2 text-gray-900 rounded-3xl">
+                <div class="text-3xl" ><i class="bg-violet-900 p-3 rounded-xl ri-windy-line"></i> Wind 3Km/h</div>
+                <div class="text-3xl"><i class="bg-violet-900 p-3 rounded-xl  ri-windy-line"></i> Wind 3Km/h</div>
+                <div class="text-3xl"><i class="bg-violet-900 p-3 rounded-xl  ri-rainy-fill"></i> Wind 3Km/h</div>
+                <div class="text-3xl"><i class="bg-violet-900 p-3 rounded-xl  ri-rainy-fill"></i> Wind 3Km/h</div>
+            </div>
+        </div>
+        <!-- Right div -->
+        <div class="bg-violet-700 bg-opacity-45 text-gray-100 h-[80%] w-[30%] p-5 rounded-3xl">
+            <div class="bg-violet-950 text-2xl w-[40%] text-center py-2 px-4 rounded-2xl">Today</div>
+            <div class=" w-[80%] px-6 h-[50%] relative">
+              <img class="w-[70%] right-0 absolute" src="./img/cloudy.png" alt="claud Image">
+            </div>
+            <div class="flex flex-col justify-center items-center gap-5">
+              <h1 class="text-7xl font-bold ">23 C</h1>
+              <h5 class="text-3xl font-semibold">23 C - 31 C</h5>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- ------------------------------------------------------------ -->
 
