@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- -------------------css-------------------------------------- -->
+
+    <link rel="stylesheet" href="./src/output.css" />
+
+    <!-- ------------------remix icon--------------------------- -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- --------------------------header---------------------------------- -->
+
+    <header
+    class="flex justify-evenly items-center h-28 bg-black text-gray-100"
+    >
+    <div class="text-5xl font-bold cursor-pointer "><span class="text-violet-900 mx-2">WE</span>CAST</div>
+    
+    <div class="sm:hidden lg:block">
+      <ul class="flex gap-5 text-xl cursor-pointer">
+        <li class="Link">Home</li>
+    
+        <li class="Link">News</li>
+    
+        <li class="Link">Contact</li>
+    
+        <li class="Link">Offer</li>
+      </ul>
+    </div>
+    <div class="flex gap-10">
+      <div class="lg:flex flex-row justify-center items-center text-xl gap-4 sm:hidden ">
+          <div class="px-[8px] py-[6px] bg-violet-900 text-gray-100 rounded-full"><i class="ri-fahrenheit-line"></i></div>
+    
+          <div  class="text-4xl cursor-pointer" ><i id="light-mode" class="ri-sun-fill"></i></div>
+      </div>
+        <div class="bg-gray-800 py-2 px-4 rounded-lg text-2xl sm:hidden lg:block"><i class="ri-send-plane-fill"></i>Location</div>
+    </div>
+    <div  class="font-bold text-4xl text-gray-100 lg:hidden cursor-pointer" ><i id="menu-icon" class="ri-menu-fold-line"></i></div>
+    
+    <div id="sm-navbar" 
+    class= "flex flex-col justify-center items-center gap-5 px-20 bg-gray-800 text-gray-100 w-full lg:h-[70vh] sm:h-[60vh] absolute z-50 top-28 backdrop-blur-md bg-opacity-30 lg:hidden sm:hidden rounded-b-2xl">
+      <ul class=" w-full flex flex-col justify-center items-center h-auto gap-6 text-4xl cursor-pointer ">
+          <li class="Link">Home</li>
+    
+          <li class="Link">News</li>
+    
+          <li class="Link">Contact</li>
+    
+          <li class="Link">Offer</li>
+      </ul>
+      <div class="flex flex-row justify-start items-center gap-3">
+          <div class="text-3xl font-bold px-[8px] py-[6px] bg-violet-900 text-gray-100 rounded-full"><i class="ri-fahrenheit-line"></i></div>
+    
+          <div  class="text-5xl cursor-pointer" ><i id="light-mode" class="ri-sun-fill"></i></div>
+      </div>
+      <div class="bg-gray-800 py-2 px-4 rounded-lg text-2xl w-[30%]"><i class="mx-3 ri-send-plane-fill"></i>Location</div>
+    </div>
+        
+    </div>
+    </header>
+    
+
+    <!-- ---------------------------Section home--------------------------------- -->
+<section class="home lg:h-[70vh] sm:h-[60vh] relative container">
+  <!-- backgraound image -->
+    <div class="absolute inset-0">
+        <img class="w-full h-full object-cover opacity-90 rounded-3xl" src="https://img.freepik.com/free-photo/beautiful-natural-clouds-sky_23-2148825005.jpg?t=st=1727033440~exp=1727037040~hmac=2fef75e180d776ad3c1eb807309581c9300ac417daae3c6616f3336aba8b662a&w=900" alt="Image example" />
+    </div>
+    <!-- -------------------------------------- -->
+    <!-- -------------------------------------- -->
+    <div class="h-full w-full flex lg:flex-row sm:flex-col lg:justify-between sm:justify-evenly items-center overflow-hidden relative z-20">
+        <!-- Left div -->
+        <div class="flex flex-col gap-8 lg:h-[80%] sm:h-[50%] lg:w-[60%] sm:w-[90%] p-6 rounded-lg shadow-lg">
+            <div class="sm:flex sm:items-center sm:justify-center lg:flex lg:flex-col">
+                <h1 class="text-gray-100 font-bold lg:text-8xl sm:text-6xl lg:text-center sm:text-start">San Francisco</h1>
+                <div class="text-gray-100 font-semibold my-2 flex lg:justify-evenly lg:flex-row sm:flex-col sm:gap-6 lg:text-2xl ">
+                    <p>Monday, May 23</p>
+                    <p>Updated As Of 2:45 PM</p>
+                </div>
+            </div>
+            <!-- For state -->
+            <div class="mt-4 bg-gray-100 lg:py-10 sm:py-8 lg:px-14 sm:px-8 grid lg:gap-9 sm:gap-6 grid-cols-2 grid-rows-2 text-gray-900 rounded-3xl">
+                <div class="lg:text-3xl sm:text-2xl"><i class="bg-violet-900 lg:p-3 sm:p-2 rounded-xl ri-windy-line"></i> Wind 3Km/h</div>
+                <div class="lg:text-3xl sm:text-2xl"><i class="bg-violet-900 lg:p-3 sm:p-2 rounded-xl ri-windy-line"></i> Wind 3Km/h</div>
+                <div class="lg:text-3xl sm:text-2xl"><i class="bg-violet-900 lg:p-3 sm:p-2 rounded-xl ri-rainy-fill"></i> Wind 3Km/h</div>
+                <div class="lg:text-3xl sm:text-2xl"><i class="bg-violet-900 lg:p-3 sm:p-2 rounded-xl ri-rainy-fill"></i> Wind 3Km/h</div>
+            </div>
+        </div>
+        <!-- Right div -->
+        <div class="bg-violet-700 bg-opacity-45 text-gray-100 lg:h-[80%] sm:h-[40%] lg:w-[30%] sm:w-[90%] lg:p-5 sm:p-7 rounded-3xl sm:relative">
+            <div class="bg-violet-950 text-2xl w-[40%] text-center py-2 px-4 rounded-2xl">Today</div>
+            <div class=" w-[80%] px-6 h-[50%] relative">
+              <img class="lg:w-[70%] sm:w-[40%] lg:right-0 sm:left-0 sm:mt-4 absolute" src="./img/cloudy.png" alt="claud Image">
+            </div>
+            <div class="flex flex-col justify-center items-center sm:absolute sm:-right-0 sm:top-1/2 sm:transform sm:-translate-x-3.5 sm:-translate-y-1/2 gap-5">
+              <h1 class="lg:text-7xl sm:text-9xl font-bold ">23 C</h1>
+              <h5 class="text-3xl font-semibold">23 C - 31 C</h5>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- ------------------------------------------------------------ -->
+
+    <!-- ------------------------------------------------------------ -->
+
+    <!-- ----------------------------script-------------------------------- -->
+     <script src="./src/script.js"></script>  
+</body>
+</html>
