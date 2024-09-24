@@ -5,6 +5,7 @@
 
 body{
     @apply bg-black ;
+    /* @apply bg-gray-100 ; */
 }
 .Link:hover{
     @apply text-violet-900 duration-300;
